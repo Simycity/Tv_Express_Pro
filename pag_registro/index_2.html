@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index_2.css">
+        <title>Bem-Vindo</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-container">
+                <h1>Bem Vindo</h1>
+                <p>Insira suas credenciais de acesso.</p>
+                <p>
+                    Não foi possível conectar-se ao serviço reCAPTCHA. Verifique sua conexão 
+                    com a Internet e atualize a página para ver um desafio reCAPTCHA.
+                </p>
+                
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="deviceId">ID do Dispositivo</label>
+                        <input type="text" id="deviceId" placeholder="Insira o ID do dispositivo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username">Usuário</label>
+                        <input type="text" id="username" placeholder="Usuário do servidor">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" placeholder="Insira sua Senha">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dns">DNS</label>
+                        <input type="text" id="dns" placeholder="Insira o DNS">
+                    </div>
+
+                    <div class="captcha-container">
+                        <span id="captchaQuestion"></span>
+                        <input type="text" id="captcha" placeholder="Resposta">
+                    </div>
+
+                    <button type="button" class="btn" onclick="validateForm()">Registrar</button>
+                </form>
+
+                <div class="footer">
+                    <p>TESTE GRÁTIS: <strong>+55 27 99509-7169</strong></p>
+                </div>
+
+            </div>
+            <div class="image-container">
+                <img src="https://expresstv.online/ativar/logo.webp" alt="Imagem ao lado do formulário">
+            </div>
+        </div>
+
+        <a href="https://wa.me/5527995097169" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp">
+        </a>
+
+        <script src="index_2.js"></script>
+    </body>
+</html>
+<!--ASS: Café☕-->

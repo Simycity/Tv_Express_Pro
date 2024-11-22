@@ -1,0 +1,163 @@
+body {
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+overflow: hidden;
+font-family: 'Orbitron', sans-serif;
+color: white;
+
+/* Fundo com GIF */
+background: url('./img/Futurama.gif') no-repeat center center fixed;
+background-size: cover; /* Garante que o GIF preencha toda a tela */
+
+/*Cria uma margem no topo*/
+margin-top: 50px;
+}
+
+.text-container {
+font-size: 3em;
+font-weight: bold;
+text-align: center;
+position: relative;
+}
+
+/* Efeito de neon brilhante */
+.futuristic-text {
+    font-size: 2.5em;
+    color: #0ff; /* Azul neon */
+    text-shadow: 
+    0 0 3px #0ff,
+    0 0 6px #0dd,
+    0 0 10px #0cc;
+}
+
+
+/* Digitação animada infinita */
+.typing {
+display: inline-block;
+overflow: hidden;
+border-right: 2px solid #0ff; /* Linha piscante */
+white-space: nowrap;
+animation: typing 4s steps(16) infinite, blink 0.5s step-end infinite;
+}
+
+/* Animações */
+@keyframes typing {
+0% { width: 0; }
+100% { width: 16ch; } /*"TVExpress Pro" aparece completo*/    
+}
+
+@keyframes blink {
+from { border-right-color: #0ff; }
+to { border-right-color: transparent; }
+}
+
+/* Estilo do botão no canto superior esquerdo */
+.button-container a {
+    position: absolute;
+    top: 20px;
+    left: 20px; /* Posiciona no canto superior esquerdo */
+    text-decoration: none;
+    color: #fff;
+    background: #0ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.button-container a:hover {
+    background: #0cc; /* Tom mais escuro ao passar o mouse */
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: #0dd;
+    padding: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0;
+    translate: 0 -1em;
+    animation: load 2s ease-in 2s forwards, up 1.4s ease-out 2s forwards;
+}
+
+
+/* Estilo do botão START */
+.start-button {
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Canto superior direito */
+    text-decoration: none;
+    color: white;
+    background-color: #00f;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+.start-button:hover {
+    background-color: #0077cc; /* Efeito ao passar o mouse */
+}
+
+/* Estilo da form-container */
+.form-container {
+height: 100vh;
+width: 100%;
+}
+
+/* Estilo para o "Apresentamos" */
+.apresentamos {
+    color: #fff;
+    font-size: 1em; /* Um tamanho menor que o principal */
+    text-transform: uppercase;
+    margin-bottom: 0px; /* Espaço abaixo de "Apresentamos" */
+    text-shadow: 
+    0 0 3px #0ff,
+    0 0 6px #0dd;
+}
+
+.subtittle{
+    color: #fff;
+    font-size: 1em; /* Um tamanho menor que o principal */
+    text-transform: uppercase;
+    margin-bottom: 10px; /* Espaço abaixo de "Apresentamos" */
+    text-shadow: 
+    0 0 3px #0ff,
+    0 0 6px #0dd;
+}
+
+/* Estilo do botão START */
+.bula-button {
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Canto superior direito */
+    text-decoration: none;
+    color: white;
+    background-color: #00f;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+.start-button:hover {
+    background-color: #0077cc; /* Efeito ao passar o mouse */
+}
+
+/* Estilo da form-container */
+.form-container {
+height: 100vh;
+width: 100%;
+}
+
+/*ASS: Café☕*/
